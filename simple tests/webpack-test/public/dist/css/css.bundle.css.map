@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/scss/src/scss/_colors.scss"],"names":[],"mappings":"AAAA;EACI,wBAAuB,EAC1B","file":"css/css.bundle.css","sourcesContent":["button {\r\n    border: 1px solid wheat;\r\n}\n\n\n// WEBPACK FOOTER //\n// ./src/scss/src/scss/_colors.scss"],"sourceRoot":""}

@@ -1,0 +1,34 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack-dev-server -w",
+    "clean": "rimraf public/dist/*",
+    "build:prod": "npm run clean && webpack -p",
+    "build:dev": "npm run clean && webpack --display-error-details",
+    "watch:dev": "webpack -w --display-error-details",
+    "serve": "npm run clean && webpack-dev-server -d --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-entry-webpack-plugin": "^1.0.0-beta.4",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "node-sass": "^4.7.2",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "vue": "^2.5.13"
+  }
+}
