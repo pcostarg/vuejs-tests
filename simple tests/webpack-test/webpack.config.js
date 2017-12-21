@@ -1,7 +1,7 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const pkg = require('./package.json');
-const CssEntryPlugin = require("css-entry-webpack-plugin");
+// const CssEntryPlugin = require("css-entry-webpack-plugin");
 const webpack = require("webpack");
 
 // var htmlWebpackPlugin = require('html-webpack-plugin');
@@ -15,7 +15,7 @@ var extractPlugin = new ExtractTextPlugin({
 });
 
 module.exports={
-    entry: {app: './src/js/app.js', css:'./src/scss/main.scss'},
+    entry: {app: './src/js/app.js', css:'./src/scss/main.scss', vendors: ['vue']},
     // entry: ['./src/js/app.js', './src/scss/main.scss'],
     output: {
         path: path.resolve(__dirname, 'public/dist'),
