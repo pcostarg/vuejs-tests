@@ -29,6 +29,11 @@ module.exports={
     devServer: {
         contentBase: './public/dist'
     },
+    resolve: {
+        alias: {
+          vue: 'vue/dist/vue.js'
+        }
+    },
     module: {
         rules:[
             {
