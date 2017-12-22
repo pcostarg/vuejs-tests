@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,21 @@
     <title>Webpack Basics</title>
     <link rel="stylesheet" href="css/css.bundle.css">
 </head>
+
 <body>
-        <div id="app">
-                <p>
-                  {{message}}
-                </p>
-                <input v-model="message">
-              </div>
+
+    <div id="app">
+        <users></users>
+        <p>
+            {{message}} {{lowercase}}
+        </p>
+        <input v-model="message">
+    </div>
     <h1>Lets learn webpack 2</h1>
     <button id="secret-button">Show the secret</button>
     <p id="secret-paragraph">You can't see this all the time</p>
+    <script src="js/vendor.bundle.js"></script>
     <script src="js/app.bundle.js"></script>
 </body>
+
 </html>

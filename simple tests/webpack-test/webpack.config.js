@@ -90,6 +90,6 @@ module.exports={
     },
     plugins: [
         extractPlugin,
-        // new webpack.optimize.CommonsChunkPlugin({name: 'vendors', filename: 'vendor.bundle.js'})
+        new webpack.optimize.CommonsChunkPlugin({name: 'vendors', filename: 'js/vendor.bundle.js'})
     ]
 };
